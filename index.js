@@ -1,5 +1,8 @@
 const http = require('http')
-http.createServer((req,res)=>{
+const server = http.createServer((req,res)=>{
     res.write("Home")
     console.log("Successfully Created server")
+})
+server.listen(3000,()=>{
+    console.log('srever created at port 3000..')
 })
